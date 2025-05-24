@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import { initDB } from "./config/db.js";
 import cors from "cors";
 import rateLimiter from "./middleware/rateLimiter.middleware.js";
-import transactionsRouter from "./routes/transactions.route.js";
+import transactionsRouter from ".//routes/transactions.route.js";
 dotenv.config();
 
 const app = express();
