@@ -36,16 +36,20 @@ export default function Page() {
         console.error(JSON.stringify(signInAttempt, null, 2));
       }
     } catch (err) {
-      // See https://clerk.com/docs/custom-flows/error-handling
-      // for more info on error handling
-      console.error(JSON.stringify(err, null, 2));
+      if (err.errors?.[0]?.code === "form_password_incorrect") {
+        setError("Incorrect email or password. Please try again.");
+        console.error(JSON.stringify(err, null, 2));
+      } else {
+        setError("An error occurred during sign-in. Please try again.");
+        console.error("Sign-in error:", err);
+      }
     }
   };
 
   return (
     <KeyboardAwareScrollView
       style={{ flex: 1 }}
-      contentcontainerstyle={{ flexGrow: 1 }}
+      contentContainerStyle={{ flexGrow: 1 }}
       enableOnAndroid={true}
       enableAutomaticScroll={true}
     >
