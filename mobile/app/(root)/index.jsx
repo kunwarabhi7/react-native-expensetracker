@@ -2,9 +2,28 @@ import { SignedIn, SignedOut, useUser } from "@clerk/clerk-expo";
 import { Link } from "expo-router";
 import { Text, View } from "react-native";
 import { SignOutButton } from "../../components/SignOutButton";
+import { useTransaction } from "../../hooks/useTransaction";
+import { useEffect } from "react";
 
 export default function Page() {
   const { user } = useUser();
+  const {
+    transactions,
+    summary,
+    loading,
+    loadData,
+    deleteTransactions,
+    fetchTransactions,
+    fetchSummary,
+  } = useTransaction(user?.id);
+  useEffect(() => {
+    if (user?.id) {
+      loadData();
+    }
+  }, [loadData]);
+  console.log("User ID:", user?.id);
+  console.log("Transactions:", transactions);
+  console.log("Summary:", summary);
 
   return (
     <View>
