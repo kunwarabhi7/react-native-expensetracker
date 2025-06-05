@@ -2,11 +2,11 @@ import { StyleSheet } from "react-native";
 import { COLORS } from "../../constants/colors";
 
 export const styles = StyleSheet.create({
-  container: {
+  containerCreate: {
     flex: 1,
     backgroundColor: COLORS.background,
   },
-  header: {
+  headerCreate: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
@@ -14,28 +14,28 @@ export const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: COLORS.border,
   },
-  headerTitle: {
+  headerTitleCreate: {
     fontSize: 18,
     fontWeight: "600",
     color: COLORS.text,
   },
-  backButton: {
+  backButtonCreate: {
     padding: 5,
   },
-  saveButtonContainer: {
+  saveButtonContainerCreate: {
     flexDirection: "row",
     alignItems: "center",
     gap: 4,
   },
-  saveButtonDisabled: {
+  saveButtonDisabledCreate: {
     opacity: 0.5,
   },
-  saveButton: {
+  saveButtonCreate: {
     fontSize: 16,
     color: COLORS.primary,
     fontWeight: "600",
   },
-  card: {
+  cardCreate: {
     backgroundColor: COLORS.card,
     margin: 16,
     borderRadius: 16,
@@ -46,12 +46,12 @@ export const styles = StyleSheet.create({
     shadowRadius: 4,
     elevation: 3,
   },
-  typeSelector: {
+  typeSelectorCreate: {
     flexDirection: "row",
     marginBottom: 20,
     gap: 10,
   },
-  typeButton: {
+  typeButtonCreate: {
     flex: 1,
     flexDirection: "row",
     alignItems: "center",
@@ -61,22 +61,22 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: COLORS.border,
   },
-  typeButtonActive: {
+  typeButtonActiveCreate: {
     backgroundColor: COLORS.primary,
     borderColor: COLORS.primary,
   },
-  typeIcon: {
+  typeIconCreate: {
     marginRight: 8,
   },
-  typeButtonText: {
+  typeButtonTextCreate: {
     color: COLORS.text,
     fontSize: 16,
     fontWeight: "500",
   },
-  typeButtonTextActive: {
+  typeButtonTextActiveCreate: {
     color: COLORS.white,
   },
-  amountContainer: {
+  amountContainerCreate: {
     flexDirection: "row",
     alignItems: "center",
     borderBottomWidth: 1,
@@ -84,19 +84,19 @@ export const styles = StyleSheet.create({
     paddingBottom: 16,
     marginBottom: 20,
   },
-  currencySymbol: {
+  currencySymbolCreate: {
     fontSize: 32,
     fontWeight: "bold",
     color: COLORS.text,
     marginRight: 8,
   },
-  amountInput: {
+  amountInputCreate: {
     flex: 1,
     fontSize: 36,
     fontWeight: "bold",
     color: COLORS.text,
   },
-  inputContainer: {
+  inputContainerCreate: {
     flexDirection: "row",
     alignItems: "center",
     borderWidth: 1,
@@ -106,16 +106,16 @@ export const styles = StyleSheet.create({
     marginBottom: 20,
     backgroundColor: COLORS.white,
   },
-  inputIcon: {
+  inputIconCreate: {
     marginHorizontal: 12,
   },
-  input: {
+  inputCreate: {
     flex: 1,
     padding: 12,
     fontSize: 16,
     color: COLORS.text,
   },
-  sectionTitle: {
+  sectionTitleCreate: {
     fontSize: 18,
     fontWeight: "600",
     color: COLORS.text,
@@ -124,12 +124,12 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
   },
-  categoryGrid: {
+  categoryGridCreate: {
     flexDirection: "row",
     flexWrap: "wrap",
     gap: 10,
   },
-  categoryButton: {
+  categoryButtonCreate: {
     flexDirection: "row",
     alignItems: "center",
     paddingHorizontal: 16,
@@ -139,21 +139,21 @@ export const styles = StyleSheet.create({
     borderColor: COLORS.border,
     backgroundColor: COLORS.white,
   },
-  categoryButtonActive: {
+  categoryButtonActiveCreate: {
     backgroundColor: COLORS.primary,
     borderColor: COLORS.primary,
   },
-  categoryIcon: {
+  categoryIconCreate: {
     marginRight: 6,
   },
-  categoryButtonText: {
+  categoryButtonTextCreate: {
     color: COLORS.text,
     fontSize: 14,
   },
-  categoryButtonTextActive: {
+  categoryButtonTextActiveCreate: {
     color: COLORS.white,
   },
-  loadingContainer: {
+  loadingContainerCreate: {
     padding: 20,
     alignItems: "center",
     justifyContent: "center",
